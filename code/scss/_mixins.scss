@@ -1,0 +1,83 @@
+@mixin respond($breakpoint){
+	@media screen and (min-width: $breakpoint) {
+
+		@content;
+	}
+
+
+}
+
+@mixin clearfix {
+
+	&:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+}
+
+/* mixins to make our lives easier */
+@mixin animation($name, $duration, $ease, $delay, $iteration: 1, $direction: both) {
+  -webkit-animation: $name $duration $ease $delay $iteration $direction;
+  -moz-animation: $name $duration $ease $delay $iteration $direction;
+  -o-animation: $name $duration $ease $delay $iteration $direction;
+  -ms-animation: $name $duration $ease $delay $iteration $direction;
+  animation: $name $duration $ease $delay $iteration $direction;
+}
+
+// use - @include animation(fade, 1.2s, ease-in-out, 0);
+
+@mixin keyframes($name) {
+  @-webkit-keyframes #{$name} { @content; }
+  @-moz-keyframes #{$name} { @content; }
+  @-o-keyframes #{$name} { @content; }
+  @-ms-keyframes #{$name} { @content; }
+  @keyframes #{$name} { @content; }
+}
+
+
+ 
+@mixin transition($property, $duration, $ease, $delay) {
+  -webkit-transition: $property $duration $ease $delay;
+  -moz-transition: $property $duration $ease $delay;
+  -o-transition: $property $duration $ease $delay;
+  -ms-transition: $property $duration $ease $delay;
+  transition: $property $duration $ease $delay;
+}
+
+
+@mixin manyTransitions( $list, $time, $easing, $delay ) {
+    $transitions: ();
+ 
+    @each $transition in $list {
+        $trans: unquote( "#{$transition} #{$time} #{$easing} #{$delay}" );
+        $transitions: append( $transitions, $trans, comma );
+    }
+ 
+    -webkit-transition: #{$transitions};
+    -moz-transition: #{$transitions};
+    -o-transition: #{$transitions};
+    -ms-transition: #{$transitions};
+    transition: #{$transitions};
+}
+ 
+// use - @include manyTransitions( (top, box-shadow), 0.3s, ease-in-out, 0);
+// put your properties that you want to change inside a bracketed list (top, box-shadow)
+// followed by the timing, easing and delay as comma seperated values
+ 
+
+
+
+
+/* use :
+
+@include keyframes(fade){
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+*/
