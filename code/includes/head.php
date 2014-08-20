@@ -8,24 +8,43 @@
 
 	<link href='http://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Share+Tech' rel='stylesheet' type='text/css'>
-	
+	<link href='http://fonts.googleapis.com/css?family=Iceland' rel='stylesheet' type='text/css'>	
 	
 </head>
 
 <body>
 
 	<div class="container">
-		<div class="row row_1 clearfix">
-			<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+		<div class="row row_1 clearfix hidden-xs">
+			<div class="col-xs-2 col-sm-3 col-md-3 col-lg-3">
 			</div>
-			<div class="col-xs-6 col-sm-6 logo col-md-6 col-lg-6">
+			<div class="col-xs-8 col-sm-6 logo col-md-6 col-lg-6">
 			<img src="images/skie_logo.png" alt="pic" title="picture of skie logo" class="img-responsive logo_pic">
 			</div>
-			<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+			<div class="col-xs-2 col-sm-3 col-md-3 col-lg-3">
 			</div>
 		</div>
 
-		<div class="row row_2 clearfix">
+		<div class="row row_1a clearfix">
+			<div class="visible-xs">
+			<img src="images/xs_logo.png" alt="pic" title="mountain range image" class="img-responsive">
+			</div>
+		</div>
+
+		<div class="row_1b clearfix">
+		<div class="visible-xs">
+			<nav>
+				<ul>
+					<li class="nav-item">about us</li>
+					<li class="nav-item">buy it</li>
+					<li class="nav-item">technology</li>
+					<li class="nav-item">share</li>
+				</ul>
+			</nav>
+			</div>
+			</div>
+
+		<!--<div class="row row_2 clearfix">
 			<div class="col-sm-12 col-md-12 col-lg-12">
 			<img src="images/skier.png" alt="pic" title="skiers background" class="img-responsive">
 			</div>
@@ -105,7 +124,7 @@
 			<h3>just a simple insole</h3>
 			<p>Contrary to popular belief, Lorem Ipsum is not simply random text.
 			It has it's roots in a piece of classical Latin literature from 45 BC,
-			making it over 2000 years old.
+			making it over 2000 years old.</p>
 			</div>
 			<div class="col-sm-3 col-md-3 col-lg-3">
 			</div>
@@ -131,7 +150,7 @@
 			<h3>connect to your smartphone</h3>
 			<p>Contrary to popular belief, Lorem Ipsum is not simply random text.
 			It has it's roots in a piece of classical Latin literature from 45 BC,
-			making it over 2000 years old.
+			making it over 2000 years old.</p>
 			</div>
 			<div class="col-sm-2 col-md-2 col-lg-2">
 			</div>
@@ -144,7 +163,10 @@
 			</div>
 
 		</div>
-		</body>
+	</div>
+		
+
+</body>-->
 
 
 	

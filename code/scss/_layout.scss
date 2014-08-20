@@ -1,19 +1,14 @@
-*{
-	box-sizing: border-box;
-}
+
 
 body {
-
-border:solid 1px white;
 	
+	background-color:black;
 }
 
 .container {
-	border:solid 1px black;
 
 //width:960px;
-//height:1200px;
-
+border:solid 1px black;
 background: #d78c75; /* Old browsers */
 background: -moz-linear-gradient(left,  #d78c75 0%, #e7c89a 100%); /* FF3.6+ */
 background: -webkit-gradient(linear, left top, right top, color-stop(0%,#d78c75), color-stop(100%,#e7c89a)); /* Chrome,Safari4+ */
@@ -29,68 +24,296 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d78c75', end
 
 .logo_pic {
 
-	//width:50%;
-
 	padding-top:50px;
+}
+
+.row_1a {
+
+	margin-top:10px;
+}
+
+nav {
+
+	background-color: black;
+	opacity:.4;
+	margin-top:-35px;
+	width:100%;
+	float:left;
+}
+
+ul {
+
+	margin:0;
+	padding:0;
+}
+
+nav ul {
+
+	width:100%;
+	margin:0;
+	padding:0;
+}
+
+nav li {
+
+	display:inline-block;
+	color:white;
+	padding:5px 10px;
+	text-align:center;
+}
+
+.nav-item {
+
+	width:24%;
+
 }
 
 .row_2 {
 
-	margin-top:150px;
+	margin-top:20px;
+
+		@include respond($tablet) {
+		margin-top:100px;
+	}
+
+	@include respond($desktop) {
+		margin-top:150px;
+	}
 }
 
-.row_3 h2{
+.row_3 {
 
-	margin:0;
-	padding:10px 0;
+	margin-top:-10px;
+
+		@include respond($tablet) {
+
+		margin:0;
+	}
+}
+
+.row_3 h2 {
+
+	font-size:1.25em;
 	font-family: 'Orbitron', sans-serif;
-	font-size:2em;
+	margin-left:40%;
+	line-height:1.75em;
 
+		@include respond($tablet) {
+
+		margin:0;
+		padding:10px 0;
+		
+		font-size:2em;
+	}
+
+		@include respond($desktop) {
+	
+		font-size:2.5em;
+	}
 }
 
 .speed {
 
-	line-height:1.25em;
+	@include respond($tablet) {
+	
+	line-height:1.35em;
+	}
 }
+
+
+.row_4 {
+
+	margin-top:60px;
+
+		@include respond($tablet) {
+
+		margin-top:350px;
+	}
+
+		@include respond($desktop) {
+
+		margin-top:450px;
+	}
+}
+
+
+.row_5,
+.row_7 {
+
+	margin-top:60px;
+
+		@include respond($tablet) {
+
+		margin-top:75px;
+	}
+
+		@include respond($desktop) {
+
+		margin-top:100px;
+	}
+}
+
+
+
+.row_6 {
+
+	margin-top:60px;
+
+		@include respond($tablet) {
+
+		margin-top:350px;
+	}
+
+		@include respond($desktop) {
+
+		margin-top:450px;
+	}
+}
+
+
+.row_8,
+.row_10 {
+
+	margin-top:40px;
+
+		@include respond($tablet) {
+
+		margin-top:125px;
+	}
+
+		@include respond($desktop) {
+
+		margin-top:250px;
+	}
+}
+
+
+.row_9 {
+
+		@include respond($tablet) {
+
+		margin-top:10px;
+	}
+
+		@include respond($desktop) {
+
+		margin-top:30px;
+	}
+}
+
 
 .row_4 h1,
 .row_6 h1 {
 
-	margin-top:300px;
-	padding:10px 0;
 	font-family: 'Orbitron', sans-serif;
-	font-size:4em;
-}
-
-.row_5 h3,
-.row_9 h3,
-.row_11 h3{
-
-	margin-top:100px;
-	padding:10px 0;
-	font-family: 'Orbitron', sans-serif;
-	font-size:2.5em;
+	font-size:3em;
 	text-align:center;
 
+		@include respond($tablet) {
+
+		font-size:5em;
+	}
+
+	@include respond($desktop) {
+
+		font-size:6em;
+	}
 }
+
+
+.row_5 h2,
+.row_9 h2,
+.row_11 h2 {
+
+	line-height:1.75em;
+	font-family: 'Orbitron', sans-serif;
+	font-size:1.25em;
+	text-align:center;
+
+		@include respond($tablet) {
+
+		font-size:2em;
+	}
+
+		@include respond($desktop) {
+		
+		font-size:2.5em;
+	}
+}
+
 
 .row_9 p,
 .row_11 p {
 
-font-family: 'Share Tech', sans-serif;
-font-size:1.25em;
+	font-family: 'Share Tech', sans-serif;
+	font-size:1em;
+	text-align:center;
 
+		@include respond($tablet) {
+
+		font-size:1.25em;
+	}
+
+		@include respond($desktop) {
+		
+		font-size:1.75em;
+
+	}
 }
 
-.row_7,
-.row_8,
-.row_10 {
 
-	margin-top:125px;
+.row_7 img {
+
+	width:60%;
+	margin-left:20%;
+	
+		@include respond($tablet) {
+
+
+	}
 }
+
 
 .row_12 {
 
-margin:50px;
+	margin-top:100px;
 
+		@include respond($tablet) {
+
+		margin-top:150px;
+	}
+
+		@include respond($desktop) {
+
+		margin-top:200px;
+	}
+}
+
+
+.row_13 {
+
+	margin-top:-60px;
+
+}
+
+
+.row_13 h4 {
+
+	font-size:1em;
+	color:white;
+	font-family: 'Iceland', cursive;
+	text-align:center;
+	border-top: solid 1px white;
+	margin:30px 0 25px 0;
+	padding-top:10px;
+
+		@include respond($tablet) {
+
+		font-size:1.25em;
+	}
+
+		@include respond($desktop) {
+
+		font-size:1.75em;
+	}
 }
