@@ -31,7 +31,7 @@
 		</div>
 
 		<div class="row row_7 clearfix">
-			<div class="col-xs-8 col-xs-offset-2 col-sm-10 col-sm-offset-1 col-md-offset-1 col-md-10 col-lg-10 col-lg-offset-1">
+			<div class="col-xs-8 col-xs-offset-2 col-sm-8 col-sm-offset-2 col-md-offset-2 col-md-8 col-lg-8 col-lg-offset-2">
 			<img src="images/skie_logo.png" alt="pic" title="picture of skie logo" class="img-responsive logo_pic">
 			</div>
 		</div>
@@ -57,10 +57,10 @@
 
 		<div class="row row_10 clearfix">
 			<div class="col-xs-4 col-xs-offset-2 col-sm-3 col-sm-offset-3 col-md-3 col-md-offset-3 col-lg-3 col-lg-offset-3">
-			<img src="images/rss_feed.png" alt="pic" title="picture of insole" class="img-responsive logo_pic">
+			<img src="images/rss_feed.png" alt="pic" title="picture of wirless icon" class="img-responsive logo_pic">
 			</div>
 			<div class="col-xs-4 col-sm-3 col-md-3 col-lg-3">
-			<img src="images/smart_phone.png" alt="pic" title="picture of ski boot" class="img-responsive logo_pic">
+			<img src="images/smart_phone.png" alt="pic" title="picture of smart phone" class="img-responsive logo_pic">
 			</div>
 		</div>
 
@@ -73,21 +73,11 @@
 			</div>
 		</div>
 
+<?php
 
-		<div class="row row_12 clearfix">
-			<div class="hidden-xs col-sm-12 col-md-12 col-lg-12">
-			<img src="images/mountain_foot.png" alt="pic" title="mountain range image" class="img-responsive">
-			</div>
+require_once('includes/footer.php');
 
-		</div>
+?>
 
-		<div class="row row_13 clearfix">
-			<div class="col-xs-12 col-sm-4 col-sm-offset-4 col-md-4 col-md-offset-4 col-lg-4 col-lg-offset-4">
-			<h4>Copyright and privacy policy</h4>
-			</div>
-		</div>
-	
-	</div>
+
 		
-
-</body>

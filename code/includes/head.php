@@ -15,16 +15,7 @@
 <body>
 
 	<div class="container">
-		<div class="row row_1 clearfix hidden-xs">
-			<div class="col-xs-2 col-sm-3 col-md-3 col-lg-3">
-			</div>
-			<div class="col-xs-8 col-sm-6 logo col-md-6 col-lg-6">
-			<img src="images/skie_logo.png" alt="pic" title="picture of skie logo" class="img-responsive logo_pic">
-			</div>
-			<div class="col-xs-2 col-sm-3 col-md-3 col-lg-3">
-			</div>
-		</div>
-
+						
 		<div class="row row_1a clearfix">
 			<div class="visible-xs">
 			<img src="images/xs_logo.png" alt="pic" title="mountain range image" class="img-responsive">
@@ -32,17 +23,17 @@
 		</div>
 
 		<div class="row_1b clearfix">
-		<div class="visible-xs">
-			<nav>
-				<ul>
-					<li class="nav-item">about us</li>
-					<li class="nav-item">buy it</li>
-					<li class="nav-item">technology</li>
-					<li class="nav-item">share</li>
-				</ul>
-			</nav>
+			<div class="visible-xs">
+				<nav>
+					<ul>
+						<li class="nav-item"><a href="about.php">about us</a></li>
+						<li class="nav-item"><a href="buy.php">buy it</a></li>
+						<li class="nav-item"><a href="tech.php">technology</a></li>
+						<li class="nav-item"><a href="share.php">share</a></li>
+					</ul>
+				</nav>
 			</div>
-			</div>
+		</div>
 
 		<!--<div class="row row_2 clearfix">
 			<div class="col-sm-12 col-md-12 col-lg-12">

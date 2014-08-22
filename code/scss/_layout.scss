@@ -1,8 +1,11 @@
-
-
 body {
 	
 	background-color:black;
+}
+
+p {
+
+	font-family: 'Orbitron', sans-serif;
 }
 
 .container {
@@ -17,14 +20,19 @@ background: -o-linear-gradient(left,  #d78c75 0%,#e7c89a 100%); /* Opera 11.10+ 
 background: -ms-linear-gradient(left,  #d78c75 0%,#e7c89a 100%); /* IE10+ */
 background: linear-gradient(to right,  #d78c75 0%,#e7c89a 100%); /* W3C */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d78c75', endColorstr='#e7c89a',GradientType=1 ); /* IE6-9 */
-
 ;
 }
 
+.btt {
+
+	float:right;
+}
 
 .logo_pic {
 
 	padding-top:50px;
+	display:block;
+	margin: 0 auto;
 }
 
 .row_1a {
@@ -32,14 +40,104 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d78c75', end
 	margin-top:10px;
 }
 
+
+.home-nav {
+
+	background-color:transparent;
+	padding-top:50px;
+	width:300px;
+	display:block;
+	margin: 0 auto;
+
+	@include respond($desktop) {
+		
+		width:400px;
+	}
+}
+
+
+
+.home-nav-item {
+
+	font-family: 'Orbitron', sans-serif;
+	color:black;
+	margin:0;
+	padding:0px;
+}
+
+.home-nav li a {
+
+	color:black;
+}
+
+
+.item_1 {
+
+	font-size:1.25em;
+	padding:0 5px 0 0;
+
+	@include respond($desktop) {
+	
+		font-size:1.75em;
+		padding:0 15px 0 0;
+	}
+}
+
+
+.item_2 {
+
+	font-size:1.5em;
+	padding:0 0 0 5px;
+
+	@include respond($desktop) {
+	
+		font-size:2em;
+	}
+}
+
+
+.item_3 {
+
+	font-size:2.25em;
+	padding:0 5px 0 0;
+
+	@include respond($desktop) {
+	
+		font-size:3.25em;
+		padding:0 15px 0 0;
+
+	}
+}
+
+
+.item_4 {
+
+	font-size:.95em;
+	width:150px;
+	text-align:left;
+
+	@include respond($desktop) {
+	
+		font-size:1.25em;
+	}
+}
+
+
+span {
+
+	padding-left:50px;
+}
+
+
 nav {
 
 	background-color: black;
-	opacity:.4;
+	opacity:.6;
 	margin-top:-35px;
 	width:100%;
 	float:left;
 }
+
 
 ul {
 
@@ -47,12 +145,14 @@ ul {
 	padding:0;
 }
 
+
 nav ul {
 
 	width:100%;
 	margin:0;
 	padding:0;
 }
+
 
 nav li {
 
@@ -62,11 +162,18 @@ nav li {
 	text-align:center;
 }
 
+
+nav li a {
+
+	color:white;
+}
+
+
 .nav-item {
 
 	width:24%;
-
 }
+
 
 .row_2 {
 
@@ -81,6 +188,13 @@ nav li {
 	}
 }
 
+
+.row_2 img {
+
+	width:80%;
+}
+
+
 .row_3 {
 
 	margin-top:-10px;
@@ -91,26 +205,28 @@ nav li {
 	}
 }
 
+
 .row_3 h2 {
 
-	font-size:1.25em;
+	font-size:12px;
 	font-family: 'Orbitron', sans-serif;
 	margin-left:40%;
-	line-height:1.75em;
+	line-height:16px;
 
 		@include respond($tablet) {
 
 		margin:0;
-		padding:10px 0;
-		
-		font-size:2em;
+		font-size:18px;
+		line-height:36px;
 	}
 
 		@include respond($desktop) {
 	
-		font-size:2.5em;
+		font-size:24px;
+		line-height:48px;
 	}
 }
+
 
 .speed {
 
@@ -152,7 +268,6 @@ nav li {
 		margin-top:100px;
 	}
 }
-
 
 
 .row_6 {
@@ -269,6 +384,14 @@ nav li {
 	
 		@include respond($tablet) {
 
+			width:80%;
+			margin-left:10%;
+	}
+
+	@include respond($desktop) {
+		
+			width:70%;
+			margin-left:15%;
 
 	}
 }
@@ -281,11 +404,13 @@ nav li {
 		@include respond($tablet) {
 
 		margin-top:150px;
+
 	}
 
 		@include respond($desktop) {
 
 		margin-top:200px;
+
 	}
 }
 
@@ -317,3 +442,420 @@ nav li {
 		font-size:1.75em;
 	}
 }
+
+
+//styling for the ABOUT page
+
+
+.about h1,
+.tech h1,
+.share h1 {
+
+	font-size:24px;
+	font-family: 'Orbitron', sans-serif;
+	text-align:center;
+
+	@include respond($tablet) {
+
+		font-size:30px;
+		color:#444;
+	}
+
+	@include respond($desktop) {
+
+		font-size:36px;
+	}
+}
+
+
+.about h2,
+.tech h2,
+.buy h2,
+.share h2 {
+
+	font-family: 'Orbitron', sans-serif;
+	font-size:20px;
+	text-align:center;
+
+		@include respond($tablet) {
+
+		font-size:24px;
+		line-height:36px;
+		color:#444;
+	}
+
+		@include respond($desktop) {
+
+		font-size:24px;
+		line-height:36px;
+	}
+}
+
+
+.row_about_1,
+.row_about_3,
+.row_tech_1,
+.row_tech_3,
+.row_tech_5,
+.row_tech_7 {
+
+	margin-top:30px;
+
+		@include respond($tablet) {
+
+		margin-top:100px;
+	}
+}
+
+
+
+.row_about_2,
+.row_about_4 {
+
+	margin-top: 10px;
+	
+	@include respond($tablet) {
+
+		margin-top:40px;
+	}
+}
+
+
+.row_about_2 p,
+.row_about_4 p {
+
+	text-align:center;
+	padding:5px;
+	font-size:12px;
+	line-height:18px;
+
+
+
+	@include respond($tablet) {
+
+		font-size:16px;
+		line-height:24px;
+		color:#444;
+		text-align:left;
+	}
+
+	@include respond($desktop) {
+
+		font-size:18px;
+		line-height:27px;
+		
+	}
+}
+
+
+.row_about_5 {
+
+	margin-top:100px;
+}
+
+
+.row_about_6 {
+
+	margin-top:30px;
+}
+
+
+.row_about_7 {
+
+
+	margin-top:50px;
+}
+
+
+.mail,
+.message,
+.btn {
+
+	margin-top:30px;
+}
+
+.button {
+
+	text-align:center;
+
+}
+
+//styling for the TECHNOLOGY page
+
+
+.tech p {
+
+	text-align:center;
+	padding:5px;
+	font-size:12px;
+	line-height:18px;
+
+		@include respond($tablet) {
+
+		font-size:16px;
+		line-height:24px;
+		color:#444;
+	}
+
+		@include respond($desktop) {
+
+		font-size:18px;
+		line-height:27px;
+		
+	}
+}
+
+
+.tech h2 {
+
+	font-size:16px;
+	color:black;
+
+		@include respond($tablet) {
+
+		font-size:30px;
+		color:#444;
+	}
+
+		@include respond($desktop) {
+
+		font-size:36px;
+	}
+}
+
+
+.row_tech_1,
+.row_tech_2 {
+
+	@include respond($desktop) {
+
+	margin-top:120px;
+	}
+}
+
+
+.row_tech_4,
+.row_tech_6,
+.row_tech_8 {
+
+	@include respond($desktop) {
+
+	margin-top: 20px;
+
+	}
+}
+
+.buy_btn {
+
+	font-size:20px;
+	font-family: 'Orbitron', sans-serif;
+	display:block;
+	text-align:center;
+	border:solid 1px white;
+
+	}
+
+
+.buy h1,
+.buy h2 {
+
+	font-size:20px;
+	line-height:30px;
+	font-family: 'Orbitron', sans-serif;
+	text-align:center;
+
+
+	@include respond($tablet) {
+
+		font-size:30px;
+		color:#444;
+	}
+
+	@include respond($desktop) {
+
+		font-size:36px;
+	}
+}	
+
+
+
+.row_buy_1,
+.row_buy_2,
+.row_share_0 {
+
+
+	margin-top:20px;
+
+	@include respond($tablet) {
+
+		margin-top:100px;
+	}
+
+	@include respond($desktop) {
+
+		font-size:150px;
+	}
+}
+
+
+.row_buy_3 {
+
+margin-top:50px;
+
+@include respond($tablet) {
+
+		margin-top:200px;
+	}
+
+	@include respond($desktop) {
+
+		font-size:250px;
+	}
+
+}
+
+.row_buy_4 {
+
+	margin-top: 25px;
+}
+
+.butt_buy {
+
+	width:100%;
+	//border:solid 1px white;
+}
+
+.buy_btn {
+
+	font-size:16px;
+	font-family: 'Orbitron', sans-serif;
+	background-color: white;
+	color:red;
+	display:block;
+	margin:0 auto;
+	text-align:center;
+	padding:10px 15px;
+	border:solid 2px red;
+	
+	@include respond($tablet) {
+
+		font-size:30px;
+		padding: 15px 40px;
+		
+	}
+
+		@include respond($desktop) {
+
+		font-size:40px;
+		padding:20px 50px;
+	}
+	//border-radius:10px;
+
+}
+
+.row_share_0 {
+
+} 
+
+.row_share_1 {
+
+	margin-top:20px;
+
+
+	@include respond($tablet) {
+
+		margin-top: 40px;
+				
+	}
+
+		@include respond($desktop) {
+			
+		margin-top: 60px;
+		
+	}
+@include respond($large-desktop) {
+
+			margin-top:80px;
+	
+	}
+
+}
+
+#data_container {
+
+	margin-top:100px;
+	display: inline-block;
+  	text-align: center;
+
+
+
+
+
+
+}
+
+
+.images img {
+
+margin:0 10px 10px 0;
+border: solid 2px white;
+width:60px;
+height:60px;
+
+
+@include respond($tablet) {
+
+		margin: 10px;
+		width:110px;
+		height:110px;
+		
+	}
+
+		@include respond($desktop) {
+
+			width:130px;
+			height:130px;
+
+		
+	}
+@include respond($large-desktop) {
+
+			width:150px;
+			height:150px;
+	
+	}
+
+}
+
+
+.row_share_3 {
+
+	margin-top:100px;
+}
+
+
+.row_share_4 {
+
+
+	margin-top: 120px;
+}
+
+.row_share_5 {
+
+	margin-top:50px;
+
+
+}
+
+.row_share_6 {
+
+margin-top:10px;
+
+
+}
+
+.row_share_7 {
+
+	margin-top: 100px;
+}
+
